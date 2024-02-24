@@ -1,0 +1,6 @@
+--- SELECT table_name FROM INFORMATION_SCHEMA.TABLES
+--- WHERE table_type = 'BASE TABLE' and table_schema = 'public'
+
+SELECT COLUMN_NAME, DATA_TYPE
+   FROM INFORMATION_SCHEMA.COLUMNS
+   WHERE TABLE_NAME = 'orders'
